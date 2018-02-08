@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Empleado>
+
+
+<h2>HEEY </h2>
+
+
+
+@{
+
+    foreach (var item in Model)
+    {
+        <h2><a asp-controller="Home" asp-action="Details" asp-route-id="@item.Id"> @item.Name @item.LastName</a> </h2>
+        <h4>@item.Gender.ToString()</h4>
+        
+
+    }
+
+ }

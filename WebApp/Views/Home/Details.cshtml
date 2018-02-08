@@ -1,0 +1,12 @@
+﻿@model Empleado
+
+
+<div>
+
+    <h2> @Model.LastName   @Model.Name </h2>
+    <h4> Nacido el @Model.BirthDate.ToShortDateString()</h4>
+    <h5> @Model.Gender.ToString()</h5>
+    <p> Dirección @Model.Email </p>
+    <p> Cliente desde @Model.PhoneNumber</p>
+
+</div>
